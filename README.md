@@ -14,11 +14,15 @@ Perhtuis Jeremy
 
 1. Clone repository
 ```bash
- git clone https://github.com/jeremyperthuis/ankorstore-test.git && cd ankorstore-test && chmod a+x install.sh
+ git clone https://github.com/jeremyperthuis/ankorstore-test.git && cd ankorstore-test 
  
 ```
+2. Add permission for sh files
+   ```
+   chmod a+x install.sh launch_server.sh launch_scrap.sh
+   ```
 
-2. Launch scrapping
+3. Launch scrapping
 ```bash
 sudo apt-get update && \
 sudo apt-get install -y chromium-browser
