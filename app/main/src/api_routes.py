@@ -1,7 +1,6 @@
 from app.main.src.company_controller import CompanyList, CompanyId, home
 
 
-
 class ApiRoutes():
     def __init__(self, api):
         api.add_resource(home, '/')

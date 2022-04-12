@@ -1,13 +1,15 @@
 # app/main
 import os
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
+
 from .config import config_by_name, basedir
 import logging.config
 
+
 logging.config.fileConfig(os.path.join(basedir, 'config/logging.conf'))
 log_datahandler = logging.getLogger('datahandler')
-
 db = SQLAlchemy()
 
 

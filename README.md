@@ -1,9 +1,15 @@
 # Ankostore test
-Perhtuis Jeremy
+Perthuis Jeremy
 
+## I Project Description
 
+This project embedded a mini flask server plus a Selenium based scrapping script.
 
-## Installation
+ - Scrapper : The scrapper retrieve informations from Google maps results, and persists information in a database.
+
+ - Flask server : The server expose data through a simple API. 
+
+## II Installation
 
 ### Requirements
 - Ubuntu based environement
@@ -13,27 +19,29 @@ Perhtuis Jeremy
 ### Procedure
 
 1. Clone repository
-```bash
- git clone https://github.com/jeremyperthuis/ankorstore-test.git && cd ankorstore-test 
- 
-```
+    ```bash
+    git clone https://github.com/jeremyperthuis/ankorstore-test.git && cd ankorstore-test 
+    ```
 2. Add permission for sh files
    ```
    chmod a+x install.sh launch_server.sh launch_scrapping.sh -v 
    ```
 
-3. Launch scrapping
-```bash
-./
-```
+3. Install python environment
+    ```bash
+    ./install.sh
+    ```
 
-3. Launch API server
-```bash
-chmod a+x install.sh
-./install.sh
-```
+4. Launch scrapping
+    ```bash
+    ./launch_scrapping.sh
+    ```
+5. Launch flaks server
+    ```bash
+    ./launch_scrapping.sh
+    ```
 
-4. Test API
-```
+6. Test API endpoint by copying this link in a browser
+    ```
     http://127.0.0.1:5000/api/v1/company
-```
+    ```

@@ -1,5 +1,7 @@
-from .. import db
 from datetime import datetime
+
+from .. import db
+
 
 class Company(db.Model):
     __tablename__ = "company"
