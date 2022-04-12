@@ -19,13 +19,12 @@ Perhtuis Jeremy
 ```
 2. Add permission for sh files
    ```
-   chmod a+x install.sh launch_server.sh launch_scrap.sh
+   chmod a+x install.sh launch_server.sh launch_scrapping.sh -v 
    ```
 
 3. Launch scrapping
 ```bash
-sudo apt-get update && \
-sudo apt-get install -y chromium-browser
+./
 ```
 
 3. Launch API server

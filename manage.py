@@ -4,7 +4,6 @@ from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 from flask_restful import Api
 from app.main import create_app, db
-from app.main.src.google_map_scrapper import GoogleMapScrapper
 from app.main.src.api_routes import ApiRoutes
 from app.main.config import DevelopmentConfig
 
@@ -20,10 +19,6 @@ app.app_context().push()
 manager = Manager(app)
 migrate = Migrate(app, db)
 manager.add_command('db', MigrateCommand)
-
-@manager.command
-def scrap():
-    GoogleMapScrapper(DevelopmentConfig.SQLALCHEMY_DATABASE_URI, localisation="paris", keyword="vetements")
 
 @manager.command
 def run():
