@@ -1,0 +1,7 @@
+*.log
+migrations
+venv
+app/tests
+**/__pycache__
+*.db
+**/logs
