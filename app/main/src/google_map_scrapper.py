@@ -14,6 +14,7 @@ from app.main import log_datahandler
 
 
 
+
 class GoogleMapScrapper:
     """
 
@@ -106,4 +107,3 @@ class GoogleMapScrapper:
             els = self.driver.find_elements(By.CSS_SELECTOR, '.TFQHme')
             self.driver.execute_script("arguments[0].scrollIntoView();", els[-1])
             sleep(2)
-

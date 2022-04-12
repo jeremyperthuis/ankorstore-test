@@ -1,6 +1,5 @@
 #!/bin/sh
-#!/bin/sh
-mkdir app/main/logs
+mkdir app/main/logs -v
 python3 -m venv venv
 . venv/bin/activate
 pip install -r requirements.txt
