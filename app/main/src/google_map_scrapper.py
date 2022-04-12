@@ -4,6 +4,10 @@ from time import sleep
 import pandas as pd
 from sqlalchemy import create_engine
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+
+
+
 from selenium.webdriver.common.by import By
 
 from app.main import log_datahandler
@@ -14,7 +18,8 @@ class GoogleMapScrapper:
     """
 
     """
-    driver = webdriver.Chrome("chromedriver")
+    #driver = webdriver.Chrome("chromedriver")
+    driver = webdriver.Chrome(ChromeDriverManager().install())
     pagination_results = 2 # 20 results per page => 100 results
     business_df = pd.DataFrame()
     def __init__(self,db_uri=None, localisation=None, keyword=None):

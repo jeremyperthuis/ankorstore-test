@@ -14,6 +14,7 @@ Perhtuis Jeremy
 1. Clone repository
 ```bash
  git clone https://github.com/jeremyperthuis/ankorstore-test.git && cd ankorstore-test
+ chmod a+x install.sh
 ```
 
 2. Install Chromium browser
