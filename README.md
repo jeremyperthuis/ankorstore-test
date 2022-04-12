@@ -1,7 +1,30 @@
-wget https://chromedriver.storage.googleapis.com/101.0.4951.15/chromedriver_linux64.zip
-unzip chromedriver_linux64.zip
-rm chromedriver_linux64.zip
+# Ankostore test
+Perhtuis Jeremy
 
-wget https://www.insee.fr/fr/statistiques/fichier/6011070/ensemble.zip -P ressources/
-unzip -p ressources/ensemble.zip donnees_communes.csv > ressources/cities.csv
-rm ressources/ensemble.zip
+
+
+## Installation
+
+### Requirements
+- Ubuntu based environement
+- Python 3.9
+
+### Procedure
+
+1. Clone repository
+```bash
+ git clone https://github.com/jeremyperthuis/ankorstore-test.git && cd ankorstore-test
+```
+
+2. Install Chromium browser
+```bash
+sudo apt-get update && \
+sudo apt-get install -y chromium-browser
+```
+
+3. Launch install.sh file
+```bash
+chmod a+x install.sh
+./install.sh
+```
+   

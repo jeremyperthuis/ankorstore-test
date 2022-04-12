@@ -14,7 +14,7 @@ class GoogleMapScrapper:
     """
 
     """
-    driver = webdriver.Chrome("/home/perthuis/Documents/dev/projects/ankorstore-test/chromedriver")
+    driver = webdriver.Chrome("chromedriver")
     pagination_results = 2 # 20 results per page => 100 results
     business_df = pd.DataFrame()
     def __init__(self,db_uri=None, localisation=None, keyword=None):
