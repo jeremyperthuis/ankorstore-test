@@ -38,7 +38,7 @@ This project embedded a mini flask server plus a Selenium based scrapping script
     ```
 5. Launch flaks server
     ```bash
-    ./launch_scrapping.sh
+    ./launch_server.sh
     ```
 
 6. Test API endpoint by copying this link in a browser
